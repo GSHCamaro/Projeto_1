@@ -14,7 +14,7 @@ class Ventilador : public Atuador {
 public:
     Ventilador() : Atuador("Ventilador") {}
     bool setValor(int velocidade) override {
-        valor = velocidade; // Define a velocidade do ventilador
+        valor = velocidade; 
         return true;
     }
 };
@@ -23,7 +23,7 @@ class Umidificador : public Atuador {
 public:
     Umidificador() : Atuador("Umidificador") {}
     bool setValor(int configuracao) override {
-        valor = configuracao; // Define a configuração do umidificador
+        valor = configuracao; 
         return true;
     }
 };
@@ -32,7 +32,7 @@ class Desumidificador : public Atuador {
 public:
     Desumidificador() : Atuador("Desumidificador") {}
     bool setValor(int configuracao) override {
-        valor = configuracao; // Define a configuração do desumidificador
+        valor = configuracao; 
         return true;
     }
 };
@@ -41,9 +41,9 @@ class Lampada : public Atuador {
 public:
     Lampada() : Atuador("Lampada") {}
     bool setValor(int brilho) override {
-        valor = brilho; // Define o brilho da lâmpada
+        valor = brilho; 
         return true;
     }
 };
 
-#endif // ATUADOR_CPP
+#endif

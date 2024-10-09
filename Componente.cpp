@@ -38,4 +38,4 @@ public:
         }
 };
 
-#endif // COMPONENTE_CPP
+#endif 
