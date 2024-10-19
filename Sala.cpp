@@ -74,7 +74,7 @@ public:
         }
 
         // Exibe o estado dos atuadores
-        cout << "Atuadores Ligados e Seus Valores:" << endl;
+        cout << "Condição dos Atuadores:" << endl;
         for (int i = 0; i < 4; i++) { // Itera sobre os autores
             if(atuadores[i]->getValor() != 0){  // Verifica se o atuador tem um valor diferente de zero para ligar
                 atuadores[i]->ligar();  // Liga o atuador
