@@ -1,10 +1,11 @@
-#ifndef COMPONENTE_CPP
-#define COMPONENTE_CPP
+#ifndef COMPONENTE_CPP  // Verifica se COMPONENTE_CPP não foi definido ainda
+#define COMPONENTE_CPP  // Define ATUADOR_CPP
+// Elas garantem que o conteúdo entre #ifndef e #endif seja incluído apenas uma vez durante a compilação
 
-#include <iostream>
-#include <string>
+#include <iostream>     // Inclusão da biblioteca iostream
+#include <string>   // Inclusão da biblioteca string
 
-using namespace std;
+using namespace std;    // Usa o namespace padrão para evitar uso explícito de "std::"
 
 // Classe base para representar um componente
 class Componente {
@@ -55,4 +56,4 @@ public:
     }
 };
 
-#endif // Fim do bloco de proteção contra múltiplas inclusões
+#endif //  Finaliza o verificação 

@@ -141,4 +141,4 @@ public:
 
 };
 
-#endif  // Finaliza o verificação 
+#endif  // Finaliza a verificação 

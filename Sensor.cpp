@@ -1,18 +1,18 @@
-#ifndef SENSOR_CPP
-#define SENSOR_CPP
+#ifndef SENSOR_CPP  // Verifica se SENSOR_CPP não foi definido ainda
+#define SENSOR_CPP  // Define SALA_CPP
+// Elas garantem que o conteúdo entre #ifndef e #endif seja incluído apenas uma vez durante a compilação
 
-#include <iostream>      // Biblioteca para entrada e saída de dados
-#include <cstdlib>       // Biblioteca para funções de geração de números aleatórios
-#include "Componente.cpp" // Inclui a classe base Componente
+#include <iostream>     // Inclusão da biblioteca iostream
+#include <cstdlib>       // Inclusão da biblioteca cstdlib
+#include "Componente.cpp"   // Inclusão do arquivo "Componente.cpp" que contem a classe Componente com todas as suas carcteristicas
 
-// Definição da classe Sensor, que herda de Componente
-class Sensor : public Componente
-{
+// Definição da classe Sensor que herda de Componente
+class Sensor : public Componente{
 public:
     // Construtor que chama o construtor da classe base Componente
     Sensor(string nome) : Componente(nome) {}
 
-    // Método virtual puro que será implementado pelas classes derivadas
+    // Método virtual puro que será implementado pelas classes derivadas para atualizar o valor de cada sensor
     virtual void atualizar() = 0;
 };
 
@@ -20,7 +20,7 @@ public:
 class Temperatura : public Sensor
 {
 public:
-    // Construtor que define o nome do sensor como "Temperatura"
+    // Construtor que define o nome do sensor como "Temperatura" e chama o construtor da classe base Sensor
     Temperatura() : Sensor("Temperatura") {}
 
     // Implementação do método atualizar que define um valor aleatório para a temperatura
@@ -50,7 +50,7 @@ private:
     int LimiarClaridade;  // Atributo que armazena o limiar de claridade
 
 public:
-    // Construtor que inicializa o nome e o limiar de claridade
+    // Construtor que inicializa o nome e o limiar de claridade e chama o construtor da classe base Sensor
     Luminosidade(int limiar) : Sensor("Luminosidade"), LimiarClaridade(limiar) {}
 
     // Implementação do método atualizar que define um valor aleatório para a luminosidade
@@ -67,7 +67,7 @@ public:
 // Definição da classe Umidade, que herda de Sensor
 class Umidade : public Sensor {
 public:
-    // Construtor que define o nome do sensor como "Umidade"
+    // Construtor que define o nome do sensor como "Umidade" e chama o construtor da classe base Sensor
     Umidade() : Sensor("Umidade") {}
 
     // Implementação do método atualizar que define um valor aleatório para a umidade
@@ -76,4 +76,4 @@ public:
     }
 };
 
-#endif // SENSOR_CPP
+#endif // Finaliza a verificação
