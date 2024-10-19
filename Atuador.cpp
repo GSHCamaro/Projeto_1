@@ -1,8 +1,8 @@
-#ifndef ATUADOR_CPP // Verifica se ATUADOR_CPP não foi definido ainda
-#define ATUADOR_CPP // Define ATUADOR_CPP
+#ifndef ATUADOR_CPP     // Verifica se ATUADOR_CPP não foi definido ainda
+#define ATUADOR_CPP     // Define ATUADOR_CPP
 // Elas garantem que o conteúdo entre #ifndef e #endif seja incluído apenas uma vez durante a compilação
 
-#include <iostream>     // Inclusão da biblioteca iostream
+#include <iostream>         // Inclusão da biblioteca iostream
 #include "Componente.cpp"  // Inclusão do arquivo Componente.cpp, que contem a classe Componente
 #include "Sensor.cpp"      // Inclusão do arquivo Sensor.cpp, que contem a classe Sensor
 

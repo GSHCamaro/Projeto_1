@@ -1,6 +1,6 @@
-#include <iostream>  // Inclusão da biblioteca iostream
-#include <ctime>     // Inclusão da biblioteca ctime
-#include "Sala.cpp"  // Inclusão do arquivo "Sala.cpp" que contem a classe Sala e seus componentes
+#include <iostream>     // Inclusão da biblioteca iostream
+#include <ctime>        // Inclusão da biblioteca ctime
+#include "Sala.cpp"     // Inclusão do arquivo "Sala.cpp" que contem a classe Sala e seus componentes
 
 using namespace std;  // Usa o namespace padrão para evitar uso explícito de "std::"
 

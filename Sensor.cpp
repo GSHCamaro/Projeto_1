@@ -2,8 +2,8 @@
 #define SENSOR_CPP  // Define SALA_CPP
 // Elas garantem que o conteúdo entre #ifndef e #endif seja incluído apenas uma vez durante a compilação
 
-#include <iostream>     // Inclusão da biblioteca iostream
-#include <cstdlib>       // Inclusão da biblioteca cstdlib
+#include <iostream>         // Inclusão da biblioteca iostream
+#include <cstdlib>          // Inclusão da biblioteca cstdlib
 #include "Componente.cpp"   // Inclusão do arquivo "Componente.cpp" que contem a classe Componente com todas as suas carcteristicas
 
 // Definição da classe Sensor que herda de Componente

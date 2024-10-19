@@ -2,7 +2,7 @@
 #define SALA_CPP    // Define SALA_CPP
 // Elas garantem que o conteúdo entre #ifndef e #endif seja incluído apenas uma vez durante a compilação
 
-#include <iostream>  // Inclusão da biblioteca iostream
+#include <iostream>     // Inclusão da biblioteca iostream
 #include "Sensor.cpp"    // Inclusão do arquivo "Sensor.cpp" que contem a classe Sensor e seus herdeiros(Luminosidade, Umidade, etc)
 #include "Atuador.cpp"  // Inclusão do arquivo "Atuador.cpp" que contem a classe Atuador e seus herdeiros(Lampada, Umidificador, etc)
 

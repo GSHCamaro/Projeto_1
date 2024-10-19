@@ -1,5 +1,5 @@
-#ifndef COMPONENTE_CPP  // Verifica se COMPONENTE_CPP não foi definido ainda
-#define COMPONENTE_CPP  // Define ATUADOR_CPP
+#ifndef COMPONENTE_CPP      // Verifica se COMPONENTE_CPP não foi definido ainda
+#define COMPONENTE_CPP      // Define ATUADOR_CPP
 // Elas garantem que o conteúdo entre #ifndef e #endif seja incluído apenas uma vez durante a compilação
 
 #include <iostream>     // Inclusão da biblioteca iostream
